@@ -1,8 +1,8 @@
 import urllib.request, json
 from datetime import date
 
-shit=urllib.request.urlopen("http://rbi.ddns.net/getBreadCrumbData")
-data = json.loads(shit.read())
+BC=urllib.request.urlopen("http://rbi.ddns.net/getBreadCrumbData")
+data = json.loads(BC.read())
 #print(len(data))
 dt= date.today()
 today=dt.strftime("%Y-%m-%d")
